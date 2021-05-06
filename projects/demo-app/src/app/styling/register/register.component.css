@@ -1,0 +1,10 @@
+.button{
+    size: 30px;
+    position: absolute;
+    right: 50px;
+}
+.icon{
+    height: 200px;
+    width: 200px;
+    border-radius: 50;
+}

@@ -1,0 +1,32 @@
+
+ <div class="icon">
+    <img src="../assets/icon.jpg">
+</div>
+<img src="../assets/barber.jpg" class="image" height="628px" width="800px">
+<div class="login">
+    <form class="login-form"   (submit) = "dologin()">
+        <div class="form-field">
+            <h5 class='word'>Login to your<b> Account</b> to manage all the service and explore our tools.</h5>
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="email" placeholder="Enter your email?"  />
+            </mat-form-field>
+        </div>
+        <div class="form-field">
+            <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput formControlName="password" placeholder="Enter your password?" />
+            </mat-form-field>
+        </div>
+        <br>
+        <input type="checkbox">Remember me.
+        <p (click)="opendialog()" class="forgot">Forgot Password?</p>
+        <button type="submit" mat-raised-button color="primary"(click)="dologin()" >Login</button>
+        <br><br>
+        <h5>Dont have an account yet? <b> Register Now</b></h5>
+        <br><br><br><br>
+        <h5 class="footer">@ 2021<b>Barber</b>.All Right Reserved</h5>
+
+    </form>
+</div>  
+
