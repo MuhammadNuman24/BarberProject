@@ -1,6 +1,6 @@
 .login{
     height: 420px;
-    width: 310px; 
+    width: 300px; 
     position: absolute;
     top: 180px;
     margin-left: 68%;
@@ -25,11 +25,22 @@
     text-align: right;
   }
   .remember{
-    text-align: end;
-   size: 0in;
+    width: 50%;
+    float: left;
   }
   .register{
     text-decoration: underline;
     color: rgb(14, 12, 12);
-    text-align: center;
   }
+  .input{
+    height: 24px;
+    width: 300px;
+  }
+  .button{
+    height: 25px;
+    width: 300px;
+    background-color: rgb(66, 66, 253);
+    justify-content: center;
+
+  }
+

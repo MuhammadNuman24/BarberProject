@@ -1,0 +1,14 @@
+.adduser{
+    position: absolute;
+    top: 72px;
+    left: 182px;
+}
+.image{
+    background-color: rgb(196, 195, 194);
+    display: inline;
+    display: none;
+}
+.imgtext{
+  position: absolute;
+  top: 80px;
+}

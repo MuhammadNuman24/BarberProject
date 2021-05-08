@@ -1,0 +1,13 @@
+.categories{
+    position: absolute;
+    top: 72px;
+    left: 182px;
+    background-color:rgb(184, 184, 184);
+    margin:0;
+    padding:0;
+}
+.button{
+    position: absolute;
+    top: 60px;
+    right: 20px;
+}

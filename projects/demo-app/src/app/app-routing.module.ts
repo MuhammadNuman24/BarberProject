@@ -8,6 +8,8 @@ import { RevenueComponent } from './styling/revenue/revenue.component';
 import { SettingsComponent } from './styling/settings/settings.component';
 import { RegisterComponent } from './styling/register/register.component';
 import { FirstComponent } from './use/first/first.component';
+import { AdduserComponent } from './styling/adduser/adduser.component';
+import { LoginComponent } from './use/login/login.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', component:DashboardsComponent },
@@ -18,7 +20,8 @@ const routes: Routes = [
    { path: 'settings', component:SettingsComponent },
    { path: 'logout',  component:LogoutComponent },
    { path: 'first',  component:FirstComponent },
-
+   { path: 'adduser',  component:AdduserComponent},
+   { path: 'login',  component:LoginComponent},
 ];
 
 @NgModule({

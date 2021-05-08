@@ -1,5 +1,10 @@
+.register{
+    position: absolute;
+    top: 72px;
+    left: 182px;
+    background-color: rgb(247, 223, 223);
+}
 .button{
-    size: 30px;
     position: absolute;
     right: 50px;
 }

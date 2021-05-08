@@ -1,18 +1,19 @@
-  <mat-toolbar>
-    <img src="../../assets/icon.jpg" height="70px" width="150px">
+  <div class="toolbar">
+    <img src="../../assets/icon.jpg"   height="65px" width="130px" class="image">
     <button class="notification">
     <span class="material-icons">
       notifications
       </span> </button> 
-  </mat-toolbar>
+  </div>
+  <div class="menu">
 <mat-sidenav-container>
     <mat-sidenav-content class="menu" > 
       <a mat-list-item routerLink="/"  routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
       <span class="material-icons">dashboard_customize</span>DashBoards</a>
     <a  mat-list-item routerLink="/revenue" routerLinkActive="active">
       <span class="material-icons">article</span>Revenue</a>
-    <a mat-list-item  routerLink="/register"routerLinkActive="active">
-      <span class="material-icons">people</span>Users</a>
+      <a mat-list-item  routerLink="/register"routerLinkActive="active">
+      <span class="material-icons">people</span>Users </a>
     <a   mat-list-item routerLink="/appointments" routerLinkActive="active" >
       <span class="material-icons">reorder</span>Appointments</a>
     <a  mat-list-item routerLink="/categories"routerLinkActive="active" >
@@ -20,7 +21,8 @@
     <a mat-list-item routerLink="/settings" routerLinkActive="active">
       <span class="material-icons">settings</span>Settings</a>
     <a   mat-list-item routerLink="/logout" routerLinkActive="active">
-      <span class="material-icons">logout</span>Logout</a>
+     <mat-icon><span class="material-icons">logout</span></mat-icon> Logout</a>
   </mat-sidenav-content>
 </mat-sidenav-container>
 <router-outlet></router-outlet>
+</div>

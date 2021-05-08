@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import {MatDialog} from '@angular/material/dialog'
+import { CatComponent } from '../cat/cat.component';
 @Component({
   selector: 'app-categories',
   templateUrl: './categories.component.html',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoriesComponent implements OnInit {
 
-  constructor() { }
+  constructor( public dialog:MatDialog) { }
 
   ngOnInit(): void {
   }
+open(){
+  this.dialog.open(CatComponent);
+}
 
 }

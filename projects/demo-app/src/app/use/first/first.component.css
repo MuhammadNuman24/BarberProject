@@ -13,8 +13,20 @@ width: 40px;
 border-radius: 50%;
 border-color: black;
 }
-
-
+.toolbar{
+width: 1225px;
+height: 70px;
+background: rgb(68, 68, 247);
+}
+.image{
+    position: absolute;
+    left: 20px;
+}
+.menu{
+    height: 550px;
+    width: 180px;
+    background-color: #ddd
+}
 
 
 

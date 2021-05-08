@@ -4,7 +4,7 @@ import { Router } from '@angular/router'
 import { DialogComponent } from '../dialog/dialog.component';
 import {FormBuilder, FormGroup} from  '@angular/forms';
 import {LoginForm} from '../../Models/Login';
-
+import {CookieService} from 'ngx-cookie-service'
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -17,14 +17,15 @@ export class LoginComponent implements OnInit {
   email: any;
   password: any;
 
-   constructor(public dialog: MatDialog, private router: Router, private fb: FormBuilder) { }
+   constructor(public dialog: MatDialog, private router: Router,
+     private fb: FormBuilder , public cookieservice:CookieService) { }
 
    ngOnInit(): void { 
    }
    
  dologin(){
   if( this.email=="numanrazzaq24@gmail.com" && this.password == "numan24"){
-    this.router.navigateByUrl('./first')}
+    this.router.navigateByUrl('/first')}
     else {
       alert("Enter Valid Details.")
     }

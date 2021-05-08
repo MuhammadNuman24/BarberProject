@@ -4,6 +4,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatListModule } from '@angular/material/list';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatMenuModule} from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
@@ -24,6 +25,9 @@ import{CategoriesComponent} from './styling/categories/categories.component';
 import{SettingsComponent} from './styling/settings/settings.component';
 import {LogoutComponent} from './styling/logout/logout.component';
 import { LoginComponent } from './use/login/login.component';
+import{CookieService} from 'ngx-cookie-service';
+import { AdduserComponent } from './styling/adduser/adduser.component';
+import { CatComponent } from './styling/cat/cat.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,12 +40,15 @@ import { LoginComponent } from './use/login/login.component';
     CategoriesComponent,
     SettingsComponent,
     LogoutComponent,
-    LoginComponent
+    LoginComponent,
+    AdduserComponent,
+    CatComponent
   ],
   entryComponents:[DialogComponent,RegisterComponent],
   imports: [
     BrowserModule,
     FormsModule,
+    MatMenuModule,
     MatDialogModule,
     AppRoutingModule,
     ReactiveFormsModule,
@@ -56,7 +63,7 @@ import { LoginComponent } from './use/login/login.component';
     MatFormFieldModule,
     MatInputModule
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

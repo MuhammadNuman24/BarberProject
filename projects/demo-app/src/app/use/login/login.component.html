@@ -1,32 +1,28 @@
-
- <div class="icon">
+<div class="icon">
     <img src="../assets/icon.jpg">
 </div>
-<img src="../assets/barber.jpg" class="image" height="628px" width="800px">
+<img src="../assets/barber.jpg" class="image" height="630px" width="790px">
 <div class="login">
-    <form class="login-form"   (submit) = "dologin()">
-        <div class="form-field">
-            <h5 class='word'>Login to your<b> Account</b> to manage all the service and explore our tools.</h5>
-            <mat-form-field appearance="outline">
-                <mat-label>Email</mat-label>
-                <input matInput formControlName="email" placeholder="Enter your email?"  />
-            </mat-form-field>
+    <form class="login-form">
+
+        <h4 class='word'><b>LOGIN</b> to your Account to manage all the service and explore our tools.</h4>
+        &nbsp;
+        <input class="input" formControlName="email" placeholder="Enter your  Mobile No & Email ID">
+        <br> <br>
+        <input class="input" formControlName="password" placeholder=" Password" />
+        <br><br>
+        <div class="remember">
+            <input type="checkbox">Remember Me
         </div>
-        <div class="form-field">
-            <mat-form-field appearance="outline">
-                <mat-label>Password</mat-label>
-                <input matInput formControlName="password" placeholder="Enter your password?" />
-            </mat-form-field>
+        <div class="forgot">
+            <p (click)="opendialog()">Forgot Password?</p>
         </div>
         <br>
-        <input type="checkbox">Remember me.
-        <p (click)="opendialog()" class="forgot">Forgot Password?</p>
-        <button type="submit" mat-raised-button color="primary"(click)="dologin()" >Login</button>
+        <button class="button" (click)="dologin()">Login</button>
         <br><br>
-        <h5>Dont have an account yet? <b> Register Now</b></h5>
+        <h5 class="footer">Don't have an account yet? <b fontstyle='underline'>Register Now</b></h5>
         <br><br><br><br>
-        <h5 class="footer">@ 2021<b>Barber</b>.All Right Reserved</h5>
+        <h5 class="footer">@ 2021<b> Barber</b>.All Right Reserved</h5>
 
     </form>
-</div>  
-
+</div>
