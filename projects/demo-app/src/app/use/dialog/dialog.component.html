@@ -1,15 +1,13 @@
-<mat-card>
-    <button class="close" mat-button>
-        <mat-icon>
-<span class="material-icons-outlined"> highlight_of</span></mat-icon>
-    </button>
-
-    <br><br>
-    <mat-card-title> Forgot Password?</mat-card-title>
-    <mat-form-field appearance="outline">
-        <mat-label>Email</mat-label>
-        <input matInput placeholder="Enter your email?" />
-    </mat-form-field>
-    <br>
-    <button mat-raised-button color="primary">Send</button>
-</mat-card>
+<div>
+<button mat-icon-button class="close" (click)="close()">
+    <mat-icon> <span class="material-icons-outlined"> cancel </span> </mat-icon>
+</button>
+<br>
+<mat-card-title> Forgot Password?</mat-card-title>
+<br><br>
+<input placeholder="Enter your email" class="input">
+<br><br>
+<button   class="button"><a routerLink="/change">Send</a>
+</button>
+</div>
+<router-outlet></router-outlet>

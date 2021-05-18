@@ -1,10 +1,8 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Inject } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router'
 import { DialogComponent } from '../dialog/dialog.component';
-import {FormBuilder, FormGroup} from  '@angular/forms';
-import {LoginForm} from '../../Models/Login';
-import {CookieService} from 'ngx-cookie-service'
+import {CookieService} from 'ngx-cookie-service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -12,14 +10,15 @@ import {CookieService} from 'ngx-cookie-service'
 })
 export class LoginComponent implements OnInit {
  
-  @Output()
-  login = new EventEmitter <LoginForm> ();
-  email: any;
-  password: any;
 
-   constructor(public dialog: MatDialog, private router: Router,
-     private fb: FormBuilder , public cookieservice:CookieService) { }
+  public remember:boolean=false;
 
+  email="";
+  password="";
+ 
+   constructor(public dialog: MatDialog, private router: Router, 
+    public cookiesservice:CookieService  
+  ) {}
    ngOnInit(): void { 
    }
    
@@ -33,5 +32,8 @@ export class LoginComponent implements OnInit {
  }
   opendialog() {
     this.dialog.open(DialogComponent)
+  }
+  clickme(){
+    
   }
 }

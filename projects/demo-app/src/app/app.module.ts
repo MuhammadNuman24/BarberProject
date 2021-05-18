@@ -28,6 +28,7 @@ import { LoginComponent } from './use/login/login.component';
 import{CookieService} from 'ngx-cookie-service';
 import { AdduserComponent } from './styling/adduser/adduser.component';
 import { CatComponent } from './styling/cat/cat.component';
+import { ChangeComponent } from './use/change/change.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +43,8 @@ import { CatComponent } from './styling/cat/cat.component';
     LogoutComponent,
     LoginComponent,
     AdduserComponent,
-    CatComponent
+    CatComponent,
+    ChangeComponent
   ],
   entryComponents:[DialogComponent,RegisterComponent],
   imports: [

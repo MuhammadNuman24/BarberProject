@@ -10,6 +10,7 @@ import { RegisterComponent } from './styling/register/register.component';
 import { FirstComponent } from './use/first/first.component';
 import { AdduserComponent } from './styling/adduser/adduser.component';
 import { LoginComponent } from './use/login/login.component';
+import { ChangeComponent } from './use/change/change.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', component:DashboardsComponent },
@@ -22,6 +23,8 @@ const routes: Routes = [
    { path: 'first',  component:FirstComponent },
    { path: 'adduser',  component:AdduserComponent},
    { path: 'login',  component:LoginComponent},
+   { path: 'change',  component:ChangeComponent},
+
 ];
 
 @NgModule({
