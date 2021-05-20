@@ -1,15 +1,16 @@
+<div class="container">
 <div class="icon">
     <img src="../assets/icon.jpg">
 </div>
 <img src="../assets/barber.jpg" class="image" height="630px" width="790px">
 <div class="login">
     <form class="login-form">
-
-        <h4 class='word'><b>LOGIN</b> to your Account to manage all the service and explore our tools.</h4>
         &nbsp;
-        <input class="input" ngModel="email" placeholder="Enter your  Mobile No & Email ID">
-        <br> <br>
-        <input class="input" ngModel="password"  placeholder=" Password" />
+        <h4 class='word'><b>LOGIN</b> to your Account to manage all the service and explore our tools.</h4>
+       
+        <input class="input" ngModel="email" placeholder="Enter your Mobile No & Email ID">
+        <br><br>
+        <input class="input" ngModel="password" placeholder=" Password" />
         <br><br>
         <div class="remember">
             <input type="checkbox" (click)='clickme()'>Remember Me
@@ -18,12 +19,12 @@
             <p (click)="opendialog()">Forgot Password?</p>
         </div>
         <br>
-        <button class="button" (click)='dologin()'>
-            Login</button>
+        <button class="button" (click)="dologin()">Login</button>
         <br><br>
         <h5 class="footer">Don't have an account yet? <b fontstyle='underline'>Register Now</b></h5>
         <br><br><br><br>
-        <h5 class="footer">@ 2021<b> Barber</b>.All Right Reserved</h5>
+        <h5 class="footer">@ 2021 <b>Barber</b>.All Right Reserved</h5>
     </form>
     <router-outlet></router-outlet>
+</div>
 </div>

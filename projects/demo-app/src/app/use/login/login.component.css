@@ -4,6 +4,7 @@
     position: absolute;
     top: 180px;
     margin-left: 68%;
+    right: 25px;
   }
   .word{
     font-size: 9.5px;
@@ -40,5 +41,8 @@
     width: 300px;
     background-color: rgb(66, 66, 253);
     justify-content: center;
+  }
+  .container{
+    position: absolute;
   }
 
